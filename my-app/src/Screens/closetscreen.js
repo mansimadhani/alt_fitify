@@ -40,8 +40,8 @@ function ClosetScreen() {
       {/* Header */}
       <div className="top-content row align-items-center">
         <div className="col-1">
-          <Link to="/">
-            <img className="d-block mx-auto" src={preficon} alt="Go to preferences screen" width="30" />
+          <Link to="/" state={{ from: 'closet' }}>
+            <img className="d-block mx-auto" src={preficon} alt="Go to preferences screen" width="30"/>
           </Link>
         </div>
         <div className="col-1">
@@ -58,7 +58,7 @@ function ClosetScreen() {
       {/* prev and next screen arrows */}
       <div className="top-content row align-items-center next-arrows">
         <div className="col-1">
-          <Link to="/" className="nav-link"> 
+          <Link to="/" className="nav-link" state={{ from: 'closet' }}> 
             <img className="d-block mx-auto" src={previousarrowicon} alt="Go to previous screen" width="27" />
           </Link>
         </div>

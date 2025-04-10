@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FunctionComponent } from 'react';
 
@@ -10,12 +10,20 @@ import './filterscreen.css';
 
 
 const FilterScreen = () => {
-	const navigate = useNavigate();
 	const { preferences, setPreferences } = useClothing();	
 
 	const [gender, setGender] = useState(preferences.gender || []);
 	const [color, setColor] = useState(preferences.color || []);
 	const [aesthetic, setAesthetic] = useState(preferences.aesthetic || []);
+
+	const location = useLocation();
+	const navigate = useNavigate();
+
+	const from = location.state?.from || 'swipe'; // default fallback
+
+	const handleGoBack = () => {
+		navigate(from === 'closet' ? '/closet' : '/swipe');
+	};
 
 	const handleSave = () => {
 		// Save preferences to context
@@ -24,7 +32,7 @@ const FilterScreen = () => {
 		  color,
 		  aesthetic
 		});
-		navigate("/closet");
+		handleGoBack();
 	  };
 
 	const handleReset = () => {

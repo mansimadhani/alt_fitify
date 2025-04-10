@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useClothing } from "./clothingprovider"; // Correct import
 import preficon from "./Icons/preficon.png";
@@ -27,6 +28,15 @@ const SwipingScreen = () => {
   useEffect(() => {
     setCurrentIndex(0);
   }, [selectedType, likedItems, skippedItems]);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location.state?.from || 'swipe'; // default fallback
+
+  const handleGoBack = () => {
+    navigate(from === 'closet' ? '/closet' : '/swipe');
+  };
 
   // Filter items based on user preferences
   const filterByPreferences = (item) => {
@@ -72,7 +82,7 @@ const SwipingScreen = () => {
       {/* Header */}
       <div className="top-content row align-items-center">
         <div className="col-1">
-          <Link to="/">
+          <Link to="/" state={{ from: 'swipe' }}>
             <img className="d-block mx-auto" src={preficon} alt="Go to preferences screen" width="30" />
           </Link>
         </div>
