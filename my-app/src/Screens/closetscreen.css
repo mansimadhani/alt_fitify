@@ -60,4 +60,14 @@
    box-shadow: 0 0 2px 5px #6A9C89;
    transition: box-shadow 0.2s ease;
  }
+
+ .goto-swipe {
+   background-color: #B1D1B3;
+   border-radius: 20px;
+   border: none;
+   font-size: 20px;
+   padding: 10px 20px;
+   color: #666;
+   font-weight: 600;
+ }
  

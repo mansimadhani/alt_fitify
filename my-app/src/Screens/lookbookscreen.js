@@ -172,30 +172,35 @@ const Lookbook = () => {
 
       {/* Bottom Navigation */}
       <div className="row navbar fixed-bottom">
-        <div className="col text-center">
-          <Link to="/swipe" className="nav-link">
-            <img src={hearticon} alt="Swipe" width="40" />
-            <div>Swipe</div>
-          </Link>
-        </div>
+        
         <div className="col text-center">
           <Link to="/closet" className="nav-link">
             <img src={closeticon} alt="Closet" width="40" />
             <div>Closet</div>
           </Link>
         </div>
+
+        <div className="col text-center">
+          <Link to="/swipe" className="nav-link">
+            <img src={hearticon} alt="Swipe" width="40" />
+            <div>Swipe</div>
+          </Link>
+        </div>
+
         <div className="col text-center">
           <Link to="/mix-and-match" className="nav-link">
             <img src={mixandmatchicon} alt="Mix & Match" width="40" />
             <div className="nav-link">Mix & Match</div>
           </Link>
         </div>
+
         <div className="col text-center">
           <Link to="/lookbook" className="nav-link-current">
             <img src={fitsicon} alt="Lookbook" width="40" />
             <div>Lookbook</div>
           </Link>
         </div>
+        
       </div>
     </div>
   );

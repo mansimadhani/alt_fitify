@@ -24,7 +24,7 @@ const FilterScreen = () => {
 		  color,
 		  aesthetic
 		});
-		navigate("/swipe");
+		navigate("/closet");
 	  };
 
 	const handleReset = () => {

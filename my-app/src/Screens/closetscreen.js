@@ -58,14 +58,14 @@ function ClosetScreen() {
       {/* prev and next screen arrows */}
       <div className="top-content row align-items-center next-arrows">
         <div className="col-1">
-          <Link to="/swipe" className="nav-link"> 
+          <Link to="/" className="nav-link"> 
             <img className="d-block mx-auto" src={previousarrowicon} alt="Go to previous screen" width="27" />
           </Link>
         </div>
         <div className="col-1"></div>
         <div className="col-8"></div>
         <div className="col-2">
-          <Link to="/mix-and-match" className="nav-link"> 
+          <Link to="/swipe" className="nav-link"> 
             <img className="d-block mx-auto" src={nextarrowicon} alt="Go to next screen" width="30"/>
           </Link>
         </div>
@@ -108,7 +108,12 @@ function ClosetScreen() {
               </div>
             ))
           ) : (
-            <p className="text-center mt-3">No {selectedType}s in your closet yet.</p>
+            <div className="swipe-container">
+              <p className="text-center mt-3">No {selectedType}s in your closet yet.</p>
+              <Link to="/swipe">
+                <button className="goto-swipe">Add to your closet!</button>
+              </Link>
+            </div>
           )}
         </div>
       </div>
@@ -120,30 +125,35 @@ function ClosetScreen() {
 
       {/* Bottom Navigation */}
       <div className={`row navbar fixed-bottom ${selectedType}-selected`}>
-        <div className="col text-center">
-          <Link to="/swipe" className="nav-link">
-            <img src={hearticon} alt="Swipe" width="40" />
-            <div>Swipe</div>
-          </Link>
-        </div>
+        
         <div className="col text-center">
           <Link to="/closet" className="nav-link-current">
             <img src={closeticon} alt="Closet" width="40" />
             <div>Closet</div>
           </Link>
         </div>
+
+        <div className="col text-center">
+          <Link to="/swipe" className="nav-link">
+            <img src={hearticon} alt="Swipe" width="40" />
+            <div>Swipe</div>
+          </Link>
+        </div>
+
         <div className="col text-center">
           <Link to="/mix-and-match" className="nav-link">
             <img src={mixandmatchicon} alt="Mix & Match" width="40" />
             <div>Mix & Match</div>
           </Link>
         </div>
+
         <div className="col text-center">
           <Link to="/lookbook" className="nav-link">
             <img src={fitsicon} alt="Lookbook" width="40" />
             <div>Lookbook</div>
           </Link>
         </div>
+
       </div>
     </div>
   );
