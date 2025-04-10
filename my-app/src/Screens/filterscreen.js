@@ -19,7 +19,7 @@ const FilterScreen = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
 
-	const from = location.state?.from || 'swipe'; // default fallback
+	const from = location.state?.from || 'closet'; // default fallback
 
 	const handleGoBack = () => {
 		navigate(from === 'closet' ? '/closet' : '/swipe');
