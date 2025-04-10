@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alt_fitify/static/css/main.88c8fa99.css",
-    "main.js": "/alt_fitify/static/js/main.5d0c7952.js",
+    "main.css": "/alt_fitify/static/css/main.79de9ee0.css",
+    "main.js": "/alt_fitify/static/js/main.264bd780.js",
     "static/js/453.68693753.chunk.js": "/alt_fitify/static/js/453.68693753.chunk.js",
     "static/media/masc-bottom-5.png": "/alt_fitify/static/media/masc-bottom-5.9721a218bedfb8d5e7cd.png",
     "static/media/masc-top-5.png": "/alt_fitify/static/media/masc-top-5.6281456fb7a80125187b.png",
@@ -68,12 +68,12 @@
     "static/media/shoe4.png": "/alt_fitify/static/media/shoe4.d84588b43ee892be70d1.png",
     "static/media/shoe2.png": "/alt_fitify/static/media/shoe2.7db425cdd4c30705a8f9.png",
     "index.html": "/alt_fitify/index.html",
-    "main.88c8fa99.css.map": "/alt_fitify/static/css/main.88c8fa99.css.map",
-    "main.5d0c7952.js.map": "/alt_fitify/static/js/main.5d0c7952.js.map",
+    "main.79de9ee0.css.map": "/alt_fitify/static/css/main.79de9ee0.css.map",
+    "main.264bd780.js.map": "/alt_fitify/static/js/main.264bd780.js.map",
     "453.68693753.chunk.js.map": "/alt_fitify/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88c8fa99.css",
-    "static/js/main.5d0c7952.js"
+    "static/css/main.79de9ee0.css",
+    "static/js/main.264bd780.js"
   ]
 }
