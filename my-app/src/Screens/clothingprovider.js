@@ -67,6 +67,56 @@ export const ClothingProvider = ({ children }) => {
     { id: 53, name: "Black Jorts", img: Clothes.unibottom6, color: ["black"], occasion: ["music-festival"], gender: ["unisex"], aesthetic: ["streetwear"], category: "bottom"},
     { id: 54, name: "Green Converse", img: Clothes.unishoe6, color: ["green"], occasion: ["music-festival"], gender: ["unisex"], aesthetic: ["going-out/cute"], category: "shoe"},
 
+    // NEW ITEMS 81-106
+    { id: 81, name: "White Halter Top", img: Clothes.item81, color: ["white"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "top"},
+    { id: 82, name: "Black Twist Front Cami", img: Clothes.item82, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 83, name: "Brown Asymmetrical Top", img: Clothes.item83, color: ["brown"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 84, name: "Grey Crewneck Sweater", img: Clothes.item84, color: ["grey"], occasion: ["music-festival"], gender: ["feminine", "unisex", "masculine"], aesthetic: ["casual/comfy"], category: "top"},
+    { id: 85, name: "Pearl Embroidered Top", img: Clothes.item85, color: ["beige"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "top"},
+    { id: 86, name: "Faded Blue Flare Jeans", img: Clothes.item86, color: ["blue"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 87, name: "Purple Wrap Skirt", img: Clothes.item87, color: ["purple"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "bottom"},
+    { id: 88, name: "Green Baggy Jeans", img: Clothes.item88, color: ["green"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 89, name: "Patchwork Denim Skirt", img: Clothes.item89, color: ["blue", "multi"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "bottom"},
+    { id: 90, name: "Magenta Wide-Leg Pants", img: Clothes.item90, color: ["pink", "purple"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "bottom"},
+    { id: 91, name: "Yellow Flats", img: Clothes.item91, color: ["yellow"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "shoe"},
+    { id: 92, name: "Burgundy Pumps", img: Clothes.item92, color: ["red", "brown"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "shoe"},
+    { id: 93, name: "Orange Sneakers", img: Clothes.item93, color: ["orange"], occasion: ["music-festival"], gender: ["feminine", "unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "shoe"},
+    { id: 94, name: "Brown Collared Top", img: Clothes.item94, color: ["brown"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 95, name: "Boxy Short-Sleeved Shirt", img: Clothes.item95, color: ["grey"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 96, name: "White Linen Shirt", img: Clothes.item96, color: ["white"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 97, name: "Black Button-Down Tee", img: Clothes.item97, color: ["black"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},
+    { id: 98, name: "Basic Beige T-Shirt", img: Clothes.item98, color: ["beige"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["casual/comfy"], category: "top"},
+    { id: 99, name: "Straight-legged Jeans", img: Clothes.item99, color: ["blue"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 100, name: "Green Chinos", img: Clothes.item100, color: ["green"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 101, name: "Gradient Casual Shorts", img: Clothes.item101, color: ["purple", "multi"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["casual/comfy"], category: "bottom"},
+    { id: 102, name: "Slim-Fit Jeans", img: Clothes.item102, color: ["pink", "red"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 103, name: "Chino Shorts", img: Clothes.item103, color: ["blue"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "bottom"},
+    { id: 104, name: "Canvas Platform Sneakers", img: Clothes.item104, color: ["red"], occasion: ["music-festival"], gender: ["feminine", "unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "shoe"},
+    { id: 105, name: "Leather Sneakers", img: Clothes.item105, color: ["orange", "brown", "beige", "white"], occasion: ["music-festival"], gender: ["feminine", "unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "shoe"},
+    { id: 106, name: "Lace-up Sneakers", img: Clothes.item106, color: ["yellow"], occasion: ["music-festival"], gender: ["feminine", "unisex", "masculine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "shoe"},
+
+    // NEW ITEMS 107-132
+    { id: 107, name: "Moody Girls Top", img: Clothes.item107, color: ["green", "blue"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: [" streetwear", "casual/comfy"], category: "top"},
+    { id: 108, name: "California Top", img: Clothes.item108, color: ["purple"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: [" streetwear", "casual/comfy"], category: "top"},
+    { id: 109, name: "Green Flowy Top", img: Clothes.item109, color: ["green"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["streetwear", "going-out/cute"], category: "top"},
+    { id: 110, name: "Green Butterfly Street Top", img: Clothes.item110, color: ["green"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+    { id: 111, name: "Brown Heels", img: Clothes.item111, color: ["brown"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "shoe"},
+    { id: 112, name: "Golden Heels", img: Clothes.item112, color: ["brown", "yellow", "beige"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "shoe"},
+    { id: 113, name: "Golden Strap Heels", img: Clothes.item113, color: ["brown", "yellow", "beige"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "shoe"},
+    { id: 114, name: "White Strap Heels", img: Clothes.item114, color: ["white", "beige"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "shoe"},
+    { id: 115, name: "Orange Pants", img: Clothes.item115, color: ["orange"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "shoe"},
+    { id: 116, name: "Red Pants", img: Clothes.item116, color: ["red"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "pants"},
+    { id: 117, name: "Pink Pants", img: Clothes.item117, color: ["pink"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "pants"},
+    { id: 118, name: "Yellow Skirt", img: Clothes.item118, color: ["yellow"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "pants"},
+    { id: 119, name: "Red Skirt", img: Clothes.item119, color: ["red"], occasion: ["music-festival"], gender: ["unisex", "feminine"], aesthetic: ["going-out/cute", "business/professional"], category: "pants"},
+ 
+ 
+    { id: 120, name: "Purple Baggy Top", img: Clothes.item120, color: ["purple"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+    { id: 121, name: "Green Baggy Top", img: Clothes.item121, color: ["green"], occasion: ["music-festival"], gender: ["unisex", "feminine", "masculine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+    { id: 122, name: "Green Streetwear Top", img: Clothes.item122, color: ["green"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+    { id: 123, name: "Greek God Shirt", img: Clothes.item123, color: ["white", "blue"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+    { id: 124, name: "Blue Tropical Shirt", img: Clothes.item124, color: ["white", "blue"], occasion: ["music-festival"], gender: ["unisex", "masculine"], aesthetic: ["streetwear", "casual/comfy"], category: "top"},
+
   ]);
 
   // Storing user prefereces:

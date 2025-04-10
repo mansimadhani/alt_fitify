@@ -74,3 +74,57 @@ export { default as unishoe4 } from './uni-shoe-4.png';
 export { default as unishoe5 } from './uni-shoe-5.png';
 export { default as unishoe6 } from './uni-shoe-6.png'; 
 
+// ITEMS 81-106
+export { default as item81 } from './item81.png';
+export { default as item82 } from './item82.png';
+export { default as item83 } from './item83.png';
+export { default as item84 } from './item84.png';
+export { default as item85 } from './item85.png';
+export { default as item86 } from './item86.png';
+export { default as item87 } from './item87.png';
+export { default as item88 } from './item88.png';
+export { default as item89 } from './item89.png';
+export { default as item90 } from './item90.png';
+export { default as item91 } from './item91.png';
+export { default as item92 } from './item92.png';
+export { default as item93 } from './item93.png';
+export { default as item94 } from './item94.png';
+export { default as item95 } from './item95.png';
+export { default as item96 } from './item96.png';
+export { default as item97 } from './item97.png';
+export { default as item98 } from './item98.png';
+export { default as item99 } from './item99.png';
+export { default as item100 } from './item100.png';
+export { default as item101 } from './item101.png';
+export { default as item102 } from './item102.png';
+export { default as item103 } from './item103.png';
+export { default as item104 } from './item104.png';
+export { default as item105 } from './item105.png';
+export { default as item106 } from './item106.png';
+
+// ITEMS 107-
+export { default as item107 } from './item107.png';
+export { default as item108 } from './item108.png';
+export { default as item109 } from './item109.png';
+export { default as item110 } from './item110.png';
+export { default as item111 } from './item111.png';
+export { default as item112 } from './item112.png';
+export { default as item113 } from './item113.png';
+export { default as item114 } from './item114.png';
+export { default as item115 } from './item115.png';
+export { default as item116 } from './item116.png';
+export { default as item117 } from './item117.png';
+export { default as item118 } from './item118.png';
+export { default as item119 } from './item119.png';
+export { default as item120 } from './item120.png';
+export { default as item121 } from './item121.png';
+export { default as item122 } from './item122.png';
+export { default as item123 } from './item123.png';
+export { default as item124 } from './item124.png';
+
+
+
+
+
+
+
