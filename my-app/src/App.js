@@ -15,7 +15,7 @@ import { ClothingProvider } from "./Screens/clothingprovider";
 function App() {
   return (
     <ClothingProvider>
-      <Router basename="/alt-fitify">
+      <Router basename="/alt_fitify">
         <Routes>
           <Route path="/" element={<FilterScreen />} />
           <Route path="/swipe" element={<SwipingScreen />} />
