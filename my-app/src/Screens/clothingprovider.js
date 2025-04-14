@@ -67,6 +67,38 @@ export const ClothingProvider = ({ children }) => {
     { id: 53, name: "Black Jorts", img: Clothes.unibottom6, color: ["black"], occasion: ["music-festival"], gender: ["unisex"], aesthetic: ["streetwear"], category: "bottom"},
     { id: 54, name: "Green Converse", img: Clothes.unishoe6, color: ["green"], occasion: ["music-festival"], gender: ["unisex"], aesthetic: ["going-out/cute"], category: "shoe"},
 
+    // NEW ITEMS 55-80
+    { id: 55, name: "Black Suit Jacket", img: Clothes.item55, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+    { id: 56, name: "White Suit Jacket", img: Clothes.item56, color: ["white"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+    { id: 57, name: "Pink Blouse", img: Clothes.item57, color: ["pink"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+    { id: 58, name: "Yellow/Beige Blouse", img: Clothes.item58, color: ["yellow", "beige"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["formal/elegant"], category: "top"},
+    { id: 59, name: "Orange/Beige Dress Shirt", img: Clothes.item59, color: ["orange", "beige"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional"], category: "top"},
+    { id: 60, name: "White Dress Pants", img: Clothes.item60, color: ["white"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 61, name: "Black Dress Pants", img: Clothes.item61, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"],  category: "bottom"},
+    { id: 62, name: "Beige/Brown Dress Pants", img: Clothes.item62, color: ["brown", "beige"], occasion: ["music-festival"], gender: ["feminine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 63, name: "White/Cream Dress Pants", img: Clothes.item63, color: ["white", "beige"], occasion: ["music-festival"], gender: ["feminine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+
+
+    { id: 64, name: "Black Maxi Skirt", img: Clothes.item64, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 65, name: "Black Heels", img: Clothes.item65, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "shoe"},
+    { id: 66, name: "Dark Blue Dress Shoes", img: Clothes.item66, color: ["blue"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["formal/elegant", "business/professional"], category: "shoe"},
+    { id: 67, name: "Dark-blue Heels", img: Clothes.item67, color: ["blue"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant"], category: "shoe"},
+    { id: 68, name: "Navy Blue Flats", img: Clothes.item68, color: ["blue"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["business/professional", "formal/elegant", "going-out/cute"], category: "shoe"},
+    { id: 69, name: "White Dress Shoes", img: Clothes.item69, color: ["white"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["formal/elegant", "business/professional"], category: "shoe"},
+    { id: 70, name: "Navy Blue Suit Jacket", img: Clothes.item70, color: ["blue"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+    { id: 71, name: "Grey Suit Jacket", img: Clothes.item71, color: ["grey"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+    { id: 72, name: "Brown Suit Jacket", img: Clothes.item72, color: ["brown"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "top"},
+
+
+    { id: 73, name: "Beige/Brown Dress Shirt", img: Clothes.item73, color: ["brown", "beige"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional"], category: "top"},
+    { id: 74, name: "Red Dress Shirt", img: Clothes.item74, color: ["red"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional"], category: "top"},
+    { id: 75, name: "Black Dress Pants", img: Clothes.item75, color: ["black"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 76, name: "Grey Dress Pants", img: Clothes.item76, color: ["grey"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 77, name: "Beige Dress Pants", img: Clothes.item77, color: ["beige"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 78, name: "Navy Dress Pants", img: Clothes.item78, color: ["blue"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 79, name: "Dark Blue Dress Pants", img: Clothes.item79, color: ["blue"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "bottom"},
+    { id: 80, name: "Black Dress Shoes", img: Clothes.item80, color: ["black"], occasion: ["music-festival"], gender: ["masculine", "unisex"], aesthetic: ["business/professional", "formal/elegant"], category: "shoe"},
+
     // NEW ITEMS 81-106
     { id: 81, name: "White Halter Top", img: Clothes.item81, color: ["white"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute"], category: "top"},
     { id: 82, name: "Black Twist Front Cami", img: Clothes.item82, color: ["black"], occasion: ["music-festival"], gender: ["feminine"], aesthetic: ["going-out/cute", "casual/comfy"], category: "top"},

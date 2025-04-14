@@ -74,6 +74,34 @@ export { default as unishoe4 } from './uni-shoe-4.png';
 export { default as unishoe5 } from './uni-shoe-5.png';
 export { default as unishoe6 } from './uni-shoe-6.png'; 
 
+// ITEMS 55-80
+export { default as item55 } from './item55.png';
+export { default as item56 } from './item56.png';
+export { default as item57 } from './item57.png';
+export { default as item58 } from './item58.png';
+export { default as item59 } from './item59.png';
+export { default as item60 } from './item60.png';
+export { default as item61 } from './item61.png';
+export { default as item62 } from './item62.png';
+export { default as item63 } from './item63.png';
+export { default as item64 } from './item64.png';
+export { default as item65 } from './item65.png';
+export { default as item66 } from './item66.png';
+export { default as item67 } from './item67.png';
+export { default as item68 } from './item68.png';
+export { default as item69 } from './item69.png';
+export { default as item70 } from './item70.png';
+export { default as item71 } from './item71.png';
+export { default as item72 } from './item72.png';
+export { default as item73 } from './item73.png';
+export { default as item74 } from './item74.png';
+export { default as item75 } from './item75.png';
+export { default as item76 } from './item76.png';
+export { default as item77 } from './item77.png';
+export { default as item78 } from './item78.png';
+export { default as item79 } from './item79.png';
+export { default as item80 } from './item80.png';
+
 // ITEMS 81-106
 export { default as item81 } from './item81.png';
 export { default as item82 } from './item82.png';
