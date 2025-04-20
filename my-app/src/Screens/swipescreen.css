@@ -9,7 +9,7 @@
 }
 
 .swiping-info {
-    min-height: 70vh;
+    min-height: 50vh;
 }
 
  .pageheader {
@@ -63,4 +63,8 @@
  
 .next-arrows {
    padding-bottom: 15px;
+}
+
+.undo-swipe {
+  padding-top: 30px;
 }

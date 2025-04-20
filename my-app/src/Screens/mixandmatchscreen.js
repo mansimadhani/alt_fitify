@@ -97,39 +97,63 @@ const MixMatch = () => {
       {/* Shirt */}
       <div className="row align-items-center my-2">
         <div className="col">
-          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev Top" width="30" onClick={() => handlePrev('top')} />
+          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev Top" width="30" 
+          style={{
+            opacity: tops.length > 1 ? 1 : 0.3,
+          }}
+          onClick={() => handlePrev('top')} />
         </div>
         <div className="col">
           {tops.length > 0 && <img className="shirt-img d-block mx-auto" src={tops[topIndex].img} alt="Top" width="150" />}
         </div>
         <div className="col">
-          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next Top" width="30" onClick={() => handleNext('top')} />
+          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next Top" width="30" 
+          style={{
+            opacity: tops.length > 1 ? 1 : 0.3,
+          }}
+          onClick={() => handleNext('top')} />
         </div>
       </div>
 
       {/* bottom */}
       <div className="row align-items-center my-2">
         <div className="col">
-          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev bottom" width="30" onClick={() => handlePrev('bottom')} />
+          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev bottom" width="30"
+          style={{
+            opacity: bottoms.length > 1 ? 1 : 0.3,
+          }} 
+          onClick={() => handlePrev('bottom')} />
         </div>
         <div className="col">
           {bottoms.length > 0 && <img className="bottom-img d-block mx-auto" src={bottoms[bottomIndex].img} alt="bottom" width="150" />}
         </div>
         <div className="col">
-          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next bottom" width="30" onClick={() => handleNext('bottom')} />
+          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next bottom" width="30"
+          style={{
+            opacity: bottoms.length > 1 ? 1 : 0.3,
+          }} 
+          onClick={() => handleNext('bottom')} />
         </div>
       </div>
 
       {/* Shoes */}
       <div className="row align-items-center my-2">
         <div className="col">
-          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev Shoe" width="30" onClick={() => handlePrev('shoe')} />
+          <img className="left-arrow d-block mx-auto" src={leftarrow} alt="Prev Shoe" width="30" 
+          style={{
+            opacity: shoes.length > 1 ? 1 : 0.3,
+          }}
+          onClick={() => handlePrev('shoe')} />
         </div>
         <div className="col">
           {shoes.length > 0 && <img className="shoe-img d-block mx-auto" src={shoes[shoeIndex].img} alt="Shoe" width="150" />}
         </div>
         <div className="col">
-          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next Shoe" width="30" onClick={() => handleNext('shoe')} />
+          <img className="right-arrow d-block mx-auto" src={rightarrow} alt="Next Shoe" width="30"
+          style={{
+            opacity: shoes.length > 1 ? 1 : 0.3,
+          }} 
+          onClick={() => handleNext('shoe')} />
         </div>
       </div>
 

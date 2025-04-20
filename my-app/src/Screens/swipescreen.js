@@ -15,19 +15,31 @@ import usericon from "./Icons/user.png";
 import questionicon from "./Icons/question.png";
 import nextarrowicon from "./Icons/nextarrowicon.png";
 import previousarrowicon from "./Icons/previousarrowicon.png";
+import backarrowicon from "./Icons/backarrowicon.png";
+import redxicon from "./Icons/redxicon.png";
+
+
+
 
 import "./swipescreen.css";
 
 const SwipingScreen = () => {
-  const { clothingItems, likeClothing, skipClothing, skippedItems, likedItems, deletedItems, preferences } = useClothing();
+  const { clothingItems, likeClothing, skipClothing, unskipClothing, skippedItems, likedItems, deletedItems, preferences } = useClothing();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedType, setSelectedType] = useState("top"); // Default to "top"
+  const [undoStack, setUndoStack] = useState([]);
+
+  const [heartFlash, setHeartFlash] = useState(false); // controls heart changing color
+  const [xFlash, setXFlash] = useState(false); // controls x changing color
+
+
   // Swipe state:
   const [startX, setStartX] = useState(null);
   const [offsetX, setOffsetX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [swipeDirection, setSwipeDirection] = useState(null);
   const [justSwiped, setJustSwiped] = useState(false);
+  
 
   const threshold = 75;
 
@@ -84,20 +96,36 @@ const SwipingScreen = () => {
   const triggerSwipe = (direction) => {
     setSwipeDirection(direction);
     setJustSwiped(true);
+
+    if (direction === "right") {
+      setHeartFlash(true);
+      setTimeout(() => setHeartFlash(false), 500);
+    }
+
+    if (direction === "left") {
+      setXFlash(true);
+      setTimeout(() => setXFlash(false), 500);
+    }
   
     setTimeout(() => {
-      if (direction === "right") likeClothing(currentItem.id);
-      else                       skipClothing(currentItem.id);
+      if (direction === "right") {
+        likeClothing(currentItem.id);
+
+      } else {
+        skipClothing(currentItem.id);
+        setUndoStack((prevStack) => [...prevStack, currentItem]);
+      }
   
       setSwipeDirection(null);
       setOffsetX(0);
-      setCurrentIndex(i => i + 1);
+      setCurrentIndex((i) => i + 1);
   
       setTimeout(() => {
         setJustSwiped(false);
-      }, 50);  
-    }, 300);   
+      }, 50);
+    }, 300);
   };
+  
 
   const onDragEnd = (clientX, pointerId, el) => {
     if (!isDragging || startX === null) {
@@ -175,6 +203,31 @@ const SwipingScreen = () => {
         </div>
       </div>
 
+      
+      {/* Undo Button */}
+        <div className="row undo-swipe">
+          <div className="col-2">
+            <img src={backarrowicon}
+              alt="Undo"
+              width="40"
+              style={{
+                opacity: undoStack.length === 0 ? 0.3 : 1,
+              }}
+              onClick={() => {
+                if (undoStack.length === 0) return;
+                const lastSkipped = undoStack[undoStack.length - 1];
+                unskipClothing(lastSkipped.id);
+                setUndoStack((prev) => prev.slice(0, -1));
+                setCurrentIndex(0); // Reset so the undone item shows
+              }}
+            />
+
+          </div>
+          
+        </div>
+    
+
+
       {/* Swiping Area */}
       <div className="swiping-info d-flex flex-column justify-content-center">
         {currentIndex >= filteredItems.length ? (
@@ -194,7 +247,7 @@ const SwipingScreen = () => {
               <div className="col-2">
                 <img
                   className="swipe-icon d-block mx-auto"
-                  src={swipexicon}
+                  src={xFlash ? redxicon : swipexicon}
                   alt="Dislike"
                   width="30"
                   onClick={() => triggerSwipe("left")}
@@ -244,7 +297,7 @@ const SwipingScreen = () => {
               <div className="col-2">
                 <img
                   className="swipe-icon d-block mx-auto"
-                  src={swipehearticon}
+                  src={heartFlash ? hearticon : swipehearticon}
                   alt="Like"
                   width="30"
                   onClick={() => triggerSwipe("right")}
@@ -258,17 +311,18 @@ const SwipingScreen = () => {
 
       {/* Bottom Navigation */}
       <div className={`row navbar fixed-bottom ${selectedType}-selected`}>
-        <div className="col text-center">
-          <Link to="/swipe" className="nav-link-current">
-            <img src={hearticon} alt="Swipe" width="40" />
-            <div>Swipe</div>
-          </Link>
-        </div>
 
         <div className="col text-center">
           <Link to="/closet" className="nav-link">
             <img src={closeticon} alt="Closet" width="40" />
             <div>Closet</div>
+          </Link>
+        </div>
+
+        <div className="col text-center">
+          <Link to="/swipe" className="nav-link-current">
+            <img src={hearticon} alt="Swipe" width="40" />
+            <div>Swipe</div>
           </Link>
         </div>
 

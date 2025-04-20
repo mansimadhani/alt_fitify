@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FunctionComponent } from 'react';
 
 import MultiSelect from "./Components/MultiSelect.js"
-import backarrowicon from "./Icons/backarrowicon.png";
+import previousarrowicon from "./Icons/previousarrowicon.png";
 import { useClothing } from "./clothingprovider";
 import './filterscreen.css';
 
@@ -51,7 +51,7 @@ const FilterScreen = () => {
 			<div className="row">
 				<div className="col-1">
 					<Link to="/swipe">
-						<img className="back-arrow" src={backarrowicon}/>
+						<img className="back-arrow" src={previousarrowicon}/>
 					</Link>
 				</div>
 			</div>

@@ -272,6 +272,10 @@ export const ClothingProvider = ({ children }) => {
     }
   };
 
+  const unskipClothing = (id) => {
+    setSkippedItems((prev) => prev.filter((skippedId) => skippedId !== id));
+  };
+
   const removeLikedItem = (id) => {
     setLikedItems((prev) => prev.filter((item) => item.id !== id));
     setDeletedItems((prev) => [...prev, id]);
@@ -279,7 +283,7 @@ export const ClothingProvider = ({ children }) => {
 
   return (
     <ClothingContext.Provider value={{ clothingItems, likedItems, skippedItems, 
-      likeClothing, skipClothing, savedOutfits, saveOutfit, removeLikedItem, deletedItems,
+      likeClothing, skipClothing, unskipClothing, savedOutfits, saveOutfit, removeLikedItem, deletedItems,
       preferences, setPreferences}}>
       {children}
     </ClothingContext.Provider>

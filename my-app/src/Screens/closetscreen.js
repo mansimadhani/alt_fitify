@@ -16,11 +16,14 @@ import mixandmatchicon from "./Icons/mixandmatchicon.png";
 import fitsicon from "./Icons/fitsicon.png";
 import nextarrowicon from "./Icons/nextarrowicon.png";
 import previousarrowicon from "./Icons/previousarrowicon.png";
+import backarrowicon from "./Icons/backarrowicon.png";
 
 function ClosetScreen() {
-  const { likedItems, removeLikedItem } = useClothing();
+  const { likedItems, removeLikedItem, likeClothing } = useClothing();
   const [selectedType, setSelectedType] = useState("top");
   const [selectedItemId, setSelectedItemId] = useState(null); // for click-to-select
+  const [trashStack, setTrashStack] = useState([]);
+  
 
   const filteredItems = likedItems.filter((item) => item.category === selectedType);
 
@@ -31,7 +34,19 @@ function ClosetScreen() {
   const handleTrashClick = () => {
     if (selectedItemId) {
       removeLikedItem(selectedItemId);
+      setTrashStack((prevStack) => [...prevStack, selectedItemId]);
       setSelectedItemId(null);
+    }
+  };
+
+  const handleUndoClick = () => {
+    if (trashStack.length === 0) return;
+      
+    const lastDeletedItem = trashStack[trashStack.length - 1];
+
+    if (lastDeletedItem) {
+      likeClothing(lastDeletedItem);
+      setTrashStack((prev) => prev.slice(0, -1));
     }
   };
 
@@ -82,6 +97,22 @@ function ClosetScreen() {
         <div className={`col ${selectedType === "shoe" ? "selected" : ""}`} onClick={() => setSelectedType("shoe")}>
           <img className="d-block mx-auto" src={shoeicon} alt="Shoes" width="30" />
         </div>
+      </div>
+
+      {/* Undo Button */}
+      <div className="row undo-swipe">
+        <div className="col-2">
+          <img src={backarrowicon}
+            alt="Undo"
+            width="40"
+            style={{
+              opacity: trashStack.length === 0 ? 0.3 : 1,
+            }}
+            onClick={handleUndoClick}
+          />
+
+        </div>
+        
       </div>
 
       {/* Display Liked Clothes */}
