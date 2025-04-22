@@ -33,6 +33,9 @@ const SwipingScreen = () => {
   const [xFlash, setXFlash] = useState(false); // controls x changing color
 
 
+  const [showInfoPopup, setShowInfoPopup] = useState(false);
+
+
   // Swipe state:
   const [startX, setStartX] = useState(null);
   const [offsetX, setOffsetX] = useState(0);
@@ -151,8 +154,15 @@ const SwipingScreen = () => {
         </div>
 
         <div className="col-1">
-          <img className="d-block mx-auto" src={questionicon} alt="Info button" width="30" />
-        </div>
+  <img
+    className="d-block mx-auto"
+    src={questionicon}
+    alt="Info button"
+    width="30"
+    style={{ cursor: "pointer" }}
+    onClick={() => setShowInfoPopup(true)}
+  />
+</div>
 
         <div className="col-8">
           <p className="pageheader">Swipe to Save</p>
@@ -340,6 +350,19 @@ const SwipingScreen = () => {
           </Link>
         </div>
       </div>
+      {showInfoPopup && (
+  <div className="info-popup-overlay" onClick={() => setShowInfoPopup(false)}>
+    <div className="info-popup" onClick={(e) => e.stopPropagation()}>
+      <h5>How to Swipe</h5>
+      <p>👕 Swipe left to skip and right to like tops, bottoms, and shoes.</p>
+      <p>👖 Use the icons above to switch between categories.</p>
+      <p>👟 Your liked items are saved to your closet for future outfits!</p>
+      <button className="btn btn-primary mt-2" onClick={() => setShowInfoPopup(false)}>
+        Got it!
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 };

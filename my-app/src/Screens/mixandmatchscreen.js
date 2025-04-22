@@ -21,6 +21,9 @@ const MixMatch = () => {
   const { likedItems, saveOutfit } = useClothing();
   const [saved, setSaved] = useState(false);
 
+
+  const [showInfoPopup, setShowInfoPopup] = useState(false);
+
   // Filter by category
   const tops = likedItems.filter((item) => item.category === 'top');
   const bottoms = likedItems.filter((item) => item.category === 'bottom');
@@ -68,8 +71,15 @@ const MixMatch = () => {
           </Link>
         </div>
         <div className="col-1">
-          <img className="d-block mx-auto" src={questionicon} alt="Info" width="30" />
-        </div>
+  <img
+    className="d-block mx-auto"
+    src={questionicon}
+    alt="Info button"
+    width="30"
+    style={{ cursor: "pointer" }}
+    onClick={() => setShowInfoPopup(true)}
+  />
+</div>
         <div className="col-8">
           <p className="pageheader">Mix & Match</p>
         </div>
@@ -194,7 +204,19 @@ const MixMatch = () => {
         className={`save-outfit ${saved ? "saved" : ""}`} onClick={handleSaveOutfit}>
         {saved ? "Outfit Saved!" : "Save Outfit"}
       </button>
-
+      {showInfoPopup && (
+      <div className="info-popup-overlay" onClick={() => setShowInfoPopup(false)}>
+        <div className="info-popup" onClick={(e) => e.stopPropagation()}>
+          <h5>How to Mix and Match</h5>
+          <p>👕 Put together the perfect outfit based on what you swiped right on</p>
+          <p>👖 Press left and right to navigate between tops, bottoms, and shoes.</p>
+          <p>👟 Save as many outfits as you want and access them in the lookbook! </p>
+          <button className="btn btn-primary mt-2" onClick={() => setShowInfoPopup(false)}>
+            Got it!
+          </button>
+        </div>
+      </div>
+    )}
     </div>
   );
 };
